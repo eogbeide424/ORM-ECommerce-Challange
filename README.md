@@ -3,12 +3,32 @@
 
 # ORM E-Commerce-Challange
 |Javascript  | https://github.com/eogbeide424/ORM-ECommerce-Challange| 
-|Walk through link | http plaaceholder| 
+|Walk through link | https://drive.google.com/file/d/1VUYhfssGvk1H2VApUMfXBNjG-gVQP3S7/view?usp=sharing | 
 
 ## Description
 
- On this project our task was to connect mysql to an enviroment variable file, then when entering the schema and seeds commands to have the database deployed also we had to implement all the routes for the models that was built so when you use insomia the post routes and get routes to all  the models work and also th eput routes
+ On this project our task was to connect mysql to an enviroment variable file, then when entering the schema and seeds commands to have the database deployed also we had to implement all the routes for the models that was built so when you use insomia the post routes and get routes to all  the models work and also the put routes
 
+
+
+ ## Code Snippetts
+ this snippet was what I used to find the and isolate a single category by finding it by the primary key I found that using sequelize actually makes working with mysql easier to read and work with 
+
+  ```
+     try{
+    const categoryData= await Category.findByPk(req.params.id, {
+      include: [{model: Product}]
+    });
+
+    if(!categoryData){
+      res.status(404).json({message: 'No category found with that id'});
+      return;
+    }
+    res.status(200).json(categoryData);
+  } catch (err){
+    res.status(500).json(err);
+  }
+  ```
 
 ## Table of Contents (Optional)
 
