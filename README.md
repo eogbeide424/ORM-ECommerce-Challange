@@ -3,7 +3,7 @@
 
 # ORM E-Commerce-Challange
 |Javascript  | https://github.com/eogbeide424/ORM-ECommerce-Challange| 
-|Walk through link | https://drive.google.com/file/d/1VUYhfssGvk1H2VApUMfXBNjG-gVQP3S7/view?usp=sharing | 
+|Walk through link | https://drive.google.com/file/d/120nWKo8Zhakzs8eZdwfXXo8zHfBOpUxC/view?usp=sharing | 
 
 ## Description
 
